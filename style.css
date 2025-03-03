@@ -19,8 +19,27 @@ header {
     align-items: center;
 }
 
-header .logo h1 {
+header .logo {
     font-size: 24px;
+    -webkit-filter: drop-shadow(0px 0px 8px #fff);
+    filter: drop-shadow(0px 0px 8px #fff);
+}
+
+header .logo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .logo-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+
 }
 
 nav {
@@ -164,7 +183,7 @@ main {
 }
 
 .logo-shadow {
-  -webkit-filter: drop-shadow(5px 0px 0px #fff);
+  -webkit-filter: drop-shadow(0px 0px 8px #fff);
   filter: drop-shadow(0px 0px 8px #fff);
 }
 
