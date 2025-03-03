@@ -343,3 +343,16 @@ footer {
 .little-logo {
     margin: 15px 10px;
 }
+
+*::selection {
+  background: #00cc00;
+  color: #ffffff;
+}
+*::-moz-selection {
+  background: #00cc00;
+  color: #ffffff;
+}
+*::-webkit-selection {
+  background: #00cc00;
+  color: #ffffff;
+}
