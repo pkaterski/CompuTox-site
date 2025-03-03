@@ -323,3 +323,16 @@ footer {
     transform:translateX(25%);
   }
 }
+
+.footer-content {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.footer-list li {
+    list-style-type: none;
+}
+
+.little-logo {
+    margin: 15px 10px;
+}
