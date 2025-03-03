@@ -33,6 +33,9 @@ nav {
 
 nav ul {
 	padding-left: 0;
+    display: flex;
+    overflow: hidden;
+    transition: max-height 0.5s linear, opacity 0.9s ease;
 }
 
 nav li {
@@ -83,11 +86,12 @@ nav a:active {
   }
 
   nav ul {
-    display: none;
+/*     visibility: hidden; */
+    opacity: 0;
+    max-height: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
   }
 
   .menu-icon {
@@ -95,7 +99,10 @@ nav a:active {
   }
 
   nav.active ul {
-    display: flex;
+/*     visibility: visible; */
+    opacity: 1;
+    max-height: 1000px;
+    width: 100%;
   }
 }
 
