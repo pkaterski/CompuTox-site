@@ -52,7 +52,6 @@ nav {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-/*     max-width: 1200px; */
     background-color: #f9f4f4;
     border: 1px solid black;
 }
@@ -72,7 +71,7 @@ nav li {
 nav a {
 	border-bottom: 1px solid #ccc;
 	display: block;
-	padding: 2.5rem 2.75rem;
+	padding: 1.5rem 1.75rem;
 	text-decoration: none;
 }
 
