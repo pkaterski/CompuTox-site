@@ -26,6 +26,7 @@
     </header>
 
     <nav>
+        <div class="menu-icon"> ☰ </div>
         <ul class="main-menu">
             <li><a href="#about">За проекта</a></li>
             <li><a href="#about">Функционалности</a></li>
@@ -33,25 +34,6 @@
             <li><a href="#team">Екип</a></li>
             <li><a href="#publications">Публикации</a></li>
             <li><a href="#contact">Контакти</a></li>
-            <!--<li class="dropdown">
-                <a href="#features">Функционалности <i class="fas fa-caret-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#human-health">Токсичност към човешко здраве</a></li>
-                    <li><a href="#eco-toxicity">Екотоксичност</a></li>
-                    <li><a href="#mixtures">Токсичност на смеси</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#methodology">Методология <i class="fas fa-caret-down"></i></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#qsar">QSAR моделиране</a></li>
-                    <li><a href="#molecular">Молекулно моделиране</a></li>
-                    <li><a href="#validation">Валидиране на модели</a></li>
-                </ul>
-            </li>
-            <li><a href="#team">Екип</a></li>
-            <li><a href="#publications">Публикации</a></li>
-            <li><a href="#contact">Контакти</a></li>-->
         </ul>
     </nav>
 
@@ -266,22 +248,12 @@
     </footer>
 
     <script>
-        // Simple JavaScript for dropdown menu functionality
         document.addEventListener('DOMContentLoaded', function() {
-            const dropdowns = document.querySelectorAll('.dropdown');
+            const menuIcon = document.querySelector('.menu-icon');
+            const nav = document.querySelector('nav');
 
-            dropdowns.forEach(dropdown => {
-                dropdown.addEventListener('click', function(e) {
-                    this.classList.toggle('active');
-                    e.stopPropagation();
-                });
-            });
-
-            // Close dropdowns when clicking elsewhere
-            document.addEventListener('click', function() {
-                dropdowns.forEach(dropdown => {
-                    dropdown.classList.remove('active');
-                });
+            menuIcon.addEventListener('click', function() {
+                nav.classList.toggle('active');
             });
         });
     </script>
