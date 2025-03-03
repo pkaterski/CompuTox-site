@@ -25,8 +25,10 @@ header .logo h1 {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 nav ul {
@@ -40,18 +42,18 @@ nav li {
 nav a {
 	border-bottom: 1px solid #ccc;
 	display: block;
-	padding: .5rem .75rem;
+	padding: 2.5rem 2.75rem;
 	text-decoration: none;
 }
 
 nav a:hover, nav a:focus {
-	background-color: blue;
+	background-color: #119911;
 	color: white;
 	outline: none;
 }
 
 nav a:active {
-	background-color: darkblue;
+	background-color: darkgreen;
 }
 
 @media ( min-width: 600px ) {
