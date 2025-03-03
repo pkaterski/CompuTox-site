@@ -208,6 +208,21 @@ main {
     transform: translateY(-4px);
 }
 
+.btn-primary {
+    background-color: lightgreen;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: green;
+    transform: translateY(-4px);
+    color: white;
+}
+
+.hero-buttons {
+    margin: 25px 0;
+}
+
 .dropdown-btn {
     position: relative;
 }
