@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompuTox Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="pict.png" alt="CompuTox Predictor Logo" class="logo" width="256" height="256">
+            <div class="logo-text">
+                <h1>CompuTox Predictor</h1>
+                <p>In silico оценка на токсични ефекти на химикали</p>
+            </div>
+        </div>
+        <div class="app-button">
+            <a href="#" class="btn">Към приложението</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="main-menu">
+            <li><a href="#about">За проекта</a></li>
+            <li class="dropdown">
+                <a href="#features">Функционалности <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#human-health">Токсичност към човешко здраве</a></li>
+                    <li><a href="#eco-toxicity">Екотоксичност</a></li>
+                    <li><a href="#mixtures">Токсичност на смеси</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#methodology">Методология <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#qsar">QSAR моделиране</a></li>
+                    <li><a href="#molecular">Молекулно моделиране</a></li>
+                    <li><a href="#validation">Валидиране на модели</a></li>
+                </ul>
+            </li>
+            <li><a href="#team">Екип</a></li>
+            <li><a href="#publications">Публикации</a></li>
+            <li><a href="#contact">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Уеб-базирана платформа за оценка на токсични ефекти</h2>
+                <p>Иновативен подход за предсказване на токсичност без необходимост от тестване върху животни</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn">Научете повече</a>
+                    <a href="#" class="btn btn-primary">Към приложението</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/api/placeholder/500/300" alt="CompuTox Predictor илюстрация">
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>За проекта</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Проект <strong>CompuTox Predictor</strong> има за цел разработването на уеб-базирана софтуерна платформа за предсказване на токсични ефекти на химични вещества на базата на NAM in silico модели.</p>
+                    <p>Платформата е разработена от екип на Института по биофизика и биомедицинско инженерство на Българската академия на науките (ИБФБМИ-БАН) и стъпва на модели, разработени в рамките на EU FP7 проект COSMOS.</p>
+                    <p>Технологията отговаря на високите изисквания за подобряване на защитата на човешкото здраве и околната среда от рисковете, причинявани от химикалите, заложени в Европейския регламент REACH.</p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <i class="fas fa-flask"></i>
+                        <h3>Алтернативни методи</h3>
+                        <p>Заместване на скъпи и етично проблемни тестове с животни</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>In Silico подходи</h3>
+                        <p>Компютърно моделиране на токсични ефекти</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Екологична перспектива</h3>
+                        <p>Оценка на риска за околната среда</p>
+                    </div>
+                    <div class="highlight-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Отворена наука</h3>
+                        <p>Достъпност за изследователи и индустрия</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="container bg-light">
+            <h2>Функционалности</h2>
+            <div class="features-grid">
+                <div class="feature-item" id="human-health">
+                    <img src="/api/placeholder/100/100" alt="Човешко здраве икона">
+                    <h3>Токсичност към човешко здраве</h3>
+                    <p>Модели за оценка на токсикокинетични параметри и взаимодействия с ядрени рецептори, водещи до нежелани (токсични) ефекти.</p>
+                </div>
+                <div class="feature-item" id="eco-toxicity">
+                    <img src="/api/placeholder/100/100" alt="Екотоксичност икона">
+                    <h3>Екотоксичност</h3>
+                    <p>Модели за оценка на токсичност към водни организми (Daphnia magna, водорасли, риби) и почвени микроорганизми.</p>
+                </div>
+                <div class="feature-item" id="mixtures">
+                    <img src="/api/placeholder/100/100" alt="Токсичност на смеси икона">
+                    <h3>Токсичност на смеси</h3>
+                    <p>Иновативни модели за оценка на токсичност на смеси от химикали, отчитащи възможни синергистични или антагонистични ефекти.</p>
+                </div>
+                <div class="feature-item" id="database">
+                    <img src="/api/placeholder/100/100" alt="База данни икона">
+                    <h3>База данни с химични структури</h3>
+                    <p>Достъп до бази данни с химични съединения, за които има налични експериментални данни за токсични ефекти.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="methodology" class="container">
+            <h2>Методология</h2>
+            <div class="methodology-content">
+                <div id="qsar" class="methodology-item">
+                    <h3>QSAR моделиране</h3>
+                    <p>Количествените зависимости структура-активност (QSAR) позволяват предсказване на биологични ефекти на химичните съединения на базата на техните молекулни свойства. Платформата използва валидирани QSAR модели, отговарящи на стандартите на ОИСР.</p>
+                </div>
+                <div id="molecular" class="methodology-item">
+                    <h3>Молекулно моделиране</h3>
+                    <p>За оценка на ефекти, които са резултат от взаимодействие на малката молекула с биомакромолекула, са използвани структура-базирани подходи като молекулен докинг. Това позволява предсказване на специфични механизми на токсичност.</p>
+                </div>
+                <div id="validation" class="methodology-item">
+                    <h3>Валидиране на модели</h3>
+                    <p>Всички in silico модели са валидирани съгласно референтната рамка на ОИСР за валидиране на QSAR модели за регулаторни цели, гарантирайки тяхната научна достоверност и техническа надеждност.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="container bg-light">
+            <h2>Екип</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="/api/placeholder/150/150" alt="Проф. Иванка Цаковска" class="team-photo">
+                    <h3>Проф. д-р Иванка Цаковска</h3>
+                    <p>Ръководител на проекта</p>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/150/150" alt="Гл. ас. Иглика Лесигярска" class="team-photo">
+                    <h3>Гл. ас. д-р Иглика Лесигярска</h3>
+                    <p>Ръководител РП2</p>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/150/150" alt="Проф. Таня Пенчева" class="team-photo">
+                    <h3>Проф. д-р Таня Пенчева</h3>
+                    <p>Ръководител РП3</p>
+                </div>
+                <div class="team-member">
+                    <img src="/api/placeholder/150/150" alt="Чл.-кор. Илза Пъжева" class="team-photo">
+                    <h3>Чл.-кор. дбн Илза Пъжева</h3>
+                    <p>Научен консултант</p>
+                </div>
+            </div>
+            <div class="team-more">
+                <p>Екипът включва специалисти от ИБФБМИ-БАН, секция "QSAR и молекулно моделиране", секция "Биоинформатика и математическо моделиране" и Факултета по химия и фармация при СУ "Св. Климент Охридски".</p>
+            </div>
+        </section>
+
+        <section id="publications" class="container">
+            <h2>Публикации</h2>
+            <ul class="publications-list">
+                <li>
+                    <span class="publication-title">Diukendjieva A. et al. (2019)</span>
+                    <span class="publication-details">In silico model for membrane permeability of drug candidates. Phytomedicine, 79:153-157.</span>
+                </li>
+                <li>
+                    <span class="publication-title">Al Sharif M. et al. (2017)</span>
+                    <span class="publication-details">Docking-based classification of ionotropic glutamate receptor ligands. Toxicology, 140:55-63.</span>
+                </li>
+                <li>
+                    <span class="publication-title">Jereva D. et al. (2017)</span>
+                    <span class="publication-details">2D and 3D quantitative structure-activity relationship of flavonoid derivatives as PPARγ agonists. Math. Comput. Simul., 124:109-115.</span>
+                </li>
+                <li>
+                    <span class="publication-title">Lessigiarska I. et al. (2004)</span>
+                    <span class="publication-details">QSAR for aquatic toxicity of chemicals. SAR QSAR Environ. Res., 15:413-428.</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact" class="container bg-light">
+            <h2>Контакти</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Институт по биофизика и биомедицинско инженерство</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Акад. Г. Бончев, блок 105, София 1113, България</p>
+                    <p><i class="fas fa-phone"></i> +359 2 979 2606</p>
+                    <p><i class="fas fa-envelope"></i> computox@biomed.bas.bg</p>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Име</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Имейл</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Тема</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Съобщение</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Изпрати</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-info">
+                <img src="/api/placeholder/150/50" alt="CompuTox Predictor Logo" class="footer-logo">
+                <p>CompuTox Predictor - Уеб-базирана платформа за in silico оценка на токсични ефекти на химикали по отношение на човешко здраве и околна среда</p>
+            </div>
+            <div class="footer-links">
+                <h3>Бързи връзки</h3>
+                <ul>
+                    <li><a href="#about">За проекта</a></li>
+                    <li><a href="#features">Функционалности</a></li>
+                    <li><a href="#methodology">Методология</a></li>
+                    <li><a href="#team">Екип</a></li>
+                    <li><a href="#publications">Публикации</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="footer-partners">
+                <h3>Партньори</h3>
+                <div class="partner-logos">
+                    <img src="/api/placeholder/80/40" alt="БАН лого">
+                    <img src="/api/placeholder/80/40" alt="ИБФБМИ лого">
+                    <img src="/api/placeholder/80/40" alt="СУ лого">
+                    <img src="/api/placeholder/80/40" alt="ЕС лого">
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 CompuTox Predictor. Всички права запазени.</p>
+                <p>Финансирано от Европейския съюз - План за възстановяване и устойчивост.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for dropdown menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdowns = document.querySelectorAll('.dropdown');
+
+            dropdowns.forEach(dropdown => {
+                dropdown.addEventListener('click', function(e) {
+                    this.classList.toggle('active');
+                    e.stopPropagation();
+                });
+            });
+
+            // Close dropdowns when clicking elsewhere
+            document.addEventListener('click', function() {
+                dropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
