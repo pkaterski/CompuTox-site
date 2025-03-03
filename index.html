@@ -26,7 +26,11 @@
     </header>
 
     <nav>
-        <div class="menu-icon"> ☰ </div>
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul class="main-menu">
             <li><a href="#about">За проекта</a></li>
             <li><a href="#about">Функционалности</a></li>
@@ -254,6 +258,7 @@
 
             menuIcon.addEventListener('click', function() {
                 nav.classList.toggle('active');
+                menuIcon.classList.toggle('active');
             });
         });
     </script>
