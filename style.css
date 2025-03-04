@@ -73,6 +73,11 @@ nav a {
 	display: block;
 	padding: 1.5rem 1.75rem;
 	text-decoration: none;
+  color: black;
+}
+
+nav a:visited {
+  color: black;
 }
 
 nav a:hover, nav a:focus {
@@ -349,6 +354,14 @@ footer {
 
 .footer-list li {
     list-style-type: none;
+}
+
+.footer-list a {
+    color: #11cc22;
+}
+
+.footer-list a:visited {
+    color: #11aa22;
 }
 
 .little-logo {
