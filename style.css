@@ -357,6 +357,9 @@ footer {
   padding: 8px;
 }
 
+.footer-logo {
+}
+
 *::selection {
   background: #00cc00;
   color: #ffffff;
