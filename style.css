@@ -190,11 +190,11 @@ main {
 }
 
 .logo-shadow {
-  box-shadow: 0 0px 8px lightgreen;
+  box-shadow: 0 0px 15px lightgreen;
   background: white;
   padding:30px;
-  border-radius: 50%;
-
+  border-radius: 40%;
+  margin: 20px;
 }
 
 .button-container {
@@ -352,7 +352,9 @@ footer {
 }
 
 .little-logo {
-    margin: 15px 10px;
+  margin: 15px 10px;
+  background: white;
+  padding: 8px;
 }
 
 *::selection {
