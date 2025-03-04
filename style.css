@@ -211,6 +211,7 @@ main {
     font-size: 16px;
     transition: transform 0.3s, background-color 0.3s;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 8px;
 }
 
 .btn:hover {
@@ -230,7 +231,14 @@ main {
 }
 
 .hero-buttons {
-    margin: 25px 0;
+  display: flex;
+  margin: 25px 0;
+}
+
+@media screen and (max-width: 420px) {
+  .hero-buttons {
+    flex-direction: column;
+  }
 }
 
 .dropdown-btn {
